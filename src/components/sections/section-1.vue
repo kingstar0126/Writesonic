@@ -19,6 +19,24 @@
             <a href="/" class=" mb-6 static flex h-14 min-w-[146px] py-2 px-8 flex-col justify-center items-center content-center rounded-[100px] text-white bg-[#705cf6] text-xl text-center font-bold">Start Writing For Free</a>
             <div class="text-[#ffffff80]">No credit card required.</div>
         </div>
+        <div class="sec-1-fotos-div relative z-40 -mt-[500px] w-[1330px] -ml-14 pt-[500px]">
+            <div class="foto-1 absolute left-0 top-[10%] right-auto bottom-auto z-50 flex w-20 items-center flex-col">
+                <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21ac330f721ddf3b90b_first.png" alt="">
+                <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
+            </div>
+            <div class="foto-2 absolute left-40 top-72  right-auto bottom-auto z-50 flex w-20 items-center flex-col">
+                <img src="	https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21b32dceabd6aacd778_second.png" alt="">
+                <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
+            </div>
+            <div class="foto-3 absolute left-auto top-48 right-24 bottom-auto z-50 flex w-20 items-center flex-col">
+                <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21bfd6234297851aedc_third.png" alt="">
+                <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
+            </div>
+            <div class="foto-4 absolute left-auto top-0 right-0 bottom-auto z-50 flex w-20 items-center flex-col">
+                <img src="	https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21c04da8e3114d2ea0e_fourth.png" alt="">
+                <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
+            </div>          
+        </div>
     </div>
 </template>
 <script>
@@ -53,7 +71,6 @@
           setTimeout(this.eraseText, this.erasingSpeed);
         }
         else {
-         
           this.typeArrayIndex += 1;
           if(this.typeArrayIndex >= this.typeArray.length)
             this.typeArrayIndex = 0;
