@@ -1,6 +1,6 @@
 <template>
-    <div class="py-3 max-w-6xl mx-auto">
-        <div class="flex justify-center items-center">
+    <div class="py-3 max-w-7xl mx-auto">
+        <div class="flex justify-center items-center relative z-30">
             <a class="mr-14" href="/">
                 <img src="../Images/Logo/logo.svg" alt="Writesonic">
             </a>
