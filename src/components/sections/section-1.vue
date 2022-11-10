@@ -1,6 +1,6 @@
 <template>
     <div class="w-container relative overflow-visible max-w-7xl mx-auto">
-        <div class="head-block2 relative z-10 flex my-16 mx-auto flex-col justify-center items-center">
+        <div class="head-block2 relative z-50 flex my-16 mx-auto flex-col justify-center items-center">
             <h1 class="h1-typed-words text-white text-[80px] text-center leading-[84px] tracking-[-2.4px] font-bold mt-5 mb-3">Best Al Write for Creating</h1>
             <div class="wrapper-typed min-h-[140px] -mt-6 flex items-center justify-start">
                 <h1 class="typed-words leading-[110px] bg-clip-text text-transparent 
@@ -20,27 +20,68 @@
             <div class="text-[#ffffff80]">No credit card required.</div>
         </div>
         <div class="sec-1-fotos-div relative z-40 -mt-[500px] w-[1330px] -ml-14 pt-[500px]">
-            <div class="foto-1 absolute left-0 top-[10%] right-auto bottom-auto z-50 flex w-20 items-center flex-col">
+            <div 
+            :style="
+               `will-change: transform;
+                transform: translate3d(0px, ${windowTop / 4}px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+                `
+                   " 
+            class=" transition duration-100 ease-in-out foto-1 absolute left-0 top-[10%] right-auto bottom-auto z-50 flex w-20 items-center flex-col ">
                 <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21ac330f721ddf3b90b_first.png" alt="">
                 <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
             </div>
-            <div class="foto-2 absolute left-40 top-72  right-auto bottom-auto z-50 flex w-20 items-center flex-col">
+            <div
+            :style="
+               `will-change: transform;
+                transform: translate3d(0px, ${windowTop / 1.5}px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+                `
+                   " 
+            class="foto-2 transition duration-100 ease-in-out absolute left-40 top-72  right-auto bottom-auto z-50 flex w-20 items-center flex-col">
                 <img src="	https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21b32dceabd6aacd778_second.png" alt="">
                 <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
             </div>
-            <div class="foto-3 absolute left-auto top-48 right-24 bottom-auto z-50 flex w-20 items-center flex-col">
+            <div 
+            :style="
+               `will-change: transform;
+                transform: translate3d(0px, ${windowTop / 6}px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+                `
+                   " 
+            class="foto-3 transition duration-100 ease-in-out absolute left-auto top-48 right-24 bottom-auto z-50 flex w-20 items-center flex-col">
                 <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21bfd6234297851aedc_third.png" alt="">
                 <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
             </div>
-            <div class="foto-4 absolute left-auto top-0 right-0 bottom-auto z-50 flex w-20 items-center flex-col">
+            <div
+            :style="
+               `will-change: transform;
+                transform: translate3d(0px, ${windowTop / 3}px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+                `
+                   " 
+            class="foto-4 transition duration-100 ease-in-out absolute left-auto top-0 right-0 bottom-auto z-50 flex w-20 items-center flex-col">
                 <img src="	https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6299f21c04da8e3114d2ea0e_fourth.png" alt="">
                 <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
             </div>          
         </div>
+        <!-- Animation Canvas Section -->
+
+        <div class="cta-button-flex flex pt-8 justify-center">
+            <a class="static flex min-w-[146px] py-3 px-8 flex-col justify-center items-center content-center rounded-[100px] bg-[#705cf6] text-white font-bold text-center" href="/">
+                Sign up for free
+            </a>
+        </div>
+        <div class="text-block-3 mt-10 mb-2 text-white text-center">
+            Trusted by 1,000,000+ marketing teams, agencies and freelancers. 10,000+ 5-star ratings.
+        </div>
+        <Herofreetool />
     </div>
 </template>
 <script>
+import Herofreetool from '@/components/tools/Herofreetool.vue'
   export default {
+    components:{Herofreetool},
     data: () => {
       return {
         typeValue: '',
@@ -49,7 +90,9 @@
         erasingSpeed: 50,
         newTextDelay: 1000,
         typeArrayIndex: 0,
-        charIndex: 0
+        charIndex: 0,
+        // 
+        windowTop:0
       }
     },
     methods: {
@@ -76,10 +119,19 @@
             this.typeArrayIndex = 0;
           setTimeout(this.typeText, this.typingSpeed + 1000);
         }
-      }
+      },
+       updateScroll(){
+        this.windowTop = window.scrollY;
+        console.log(this.windowTop);
+       }
     },
     created() {
       setTimeout(this.typeText, this.newTextDelay + 200);
-    }
+    },
+
+    mounted() {
+        window.addEventListener("scroll", this.updateScroll);
+    },
+
   }
 </script>
