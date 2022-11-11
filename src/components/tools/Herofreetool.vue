@@ -2,16 +2,16 @@
     <div class="hero-free-tool h-14 mt-6 mb-5 relative  flex overflow-hidden w-full  gap-4">
         <div class="track-horizontal animate-horizontal absolute flex gap-4 ">
             <div class="hero-marquee-inner flex  items-center justify-center gap-8">
-                <div v-for="logo in logos" :key="logo.id" class=" w-28 flex mx-auto flex-col justify-center items-center auto-cols-fr">
+                <div v-for="logo in logos" :key="logo.id" class=" w-28 sm:w-16 flex mx-auto flex-col justify-center items-center auto-cols-fr">
                     <img class="max-w-full h-10 inline-block align-middle"  :src="logo.imgURL" alt="">
                 </div>
                 <div class="hero-marquee-inner flex  items-center justify-center gap-8">
-                <div v-for="logo in logos" :key="logo.id" class="w-28 flex mx-auto flex-col justify-center items-center auto-cols-fr">
+                <div v-for="logo in logos" :key="logo.id" class="w-28 sm:w-16 flex mx-auto flex-col justify-center items-center auto-cols-fr">
                     <img class="max-w-full h-10 inline-block align-middle"  :src="logo.imgURL" alt="">
                 </div>
             </div>
             <div class="hero-marquee-inner flex  items-center justify-center gap-8">
-                <div v-for="logo in logos" :key="logo.id" class="w-28 flex mx-auto flex-col justify-center items-center auto-cols-fr">
+                <div v-for="logo in logos" :key="logo.id" class="w-28 sm:w-16 flex mx-auto flex-col justify-center items-center auto-cols-fr">
                     <img class="max-w-full h-10 inline-block align-middle"  :src="logo.imgURL" alt="">
                 </div>
             </div>
@@ -19,9 +19,9 @@
         </div>     
     </div>
     <div class="flex max-w-6xl mx-auto mb-20 justify-center auto-cols-fr gap-4 ">
-        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/63528404d6a20363f34d0580_AIWritingAssistant_MomentumLeader_Leader.svg" loading="lazy" alt="moodle logo" class=" w-24">
-        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/63528404d6a203b6404d0581_AIWritingAssistant_Leader_Small-Business_Leader.svg" loading="lazy" alt="moodle logo" class="w-24">
-        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635284040d7c320eb2cafd27_AIWritingAssistant_HighPerformer_Mid-Market_HighPerformer.svg" loading="lazy" alt="moodle logo" class="w-24">
+        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/63528404d6a20363f34d0580_AIWritingAssistant_MomentumLeader_Leader.svg" loading="lazy" alt="moodle logo" class=" w-24 sm:w-9">
+        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/63528404d6a203b6404d0581_AIWritingAssistant_Leader_Small-Business_Leader.svg" loading="lazy" alt="moodle logo" class="w-24 sm:w-9">
+        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635284040d7c320eb2cafd27_AIWritingAssistant_HighPerformer_Mid-Market_HighPerformer.svg" loading="lazy" alt="moodle logo" class="w-24 sm:w-9">
     </div>
 </template>
 <script>

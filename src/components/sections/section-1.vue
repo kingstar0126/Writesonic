@@ -1,25 +1,25 @@
 <template>
-    <div class="w-container relative overflow-visible max-w-7xl mx-auto">
-        <div class="head-block2 relative z-50 flex my-16 mx-auto flex-col justify-center items-center">
-            <h1 class="h1-typed-words text-white text-[80px] text-center leading-[84px] tracking-[-2.4px] font-bold mt-5 mb-3">Best Al Write for Creating</h1>
-            <div class="wrapper-typed min-h-[140px] -mt-6 flex items-center justify-start">
+    <div class="w-container relative z-20 overflow-visible max-w-7xl mx-auto w-full flex justify-center flex-col lg:px-4 lg:mx-12 md:mx-0">
+        <div class="head-block2 relative z-50 flex my-16 sm:my-7  flex-col justify-center items-center">
+            <h1 class="h1-typed-words text-white text-[80px] text-center sm:mb-0 leading-[84px] tracking-[-2.4px] sm:text-3xl font-bold mt-5 mb-3 lg:text-7xl md:text-5xl">Best Al Write for Creating</h1>
+            <div class="wrapper-typed min-h-[140px] sm:min-h-min sm:my-1 -mt-6 flex items-center justify-start">
                 <h1 class="typed-words leading-[110px] bg-clip-text text-transparent 
-                text-[80px] text-center font-bold
+                text-[80px] text-center font-bold lg:text-[72px] lg:h-20 sm:h-10 lg:leading-none md:text-5xl sm:text-3xl
                  bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"
                  >
                  {{ typeValue }}
                 </h1>
-                <img class="my-2" src="@/Images/Icons/cursor-typed.svg" alt="">
+                <img class="my-2 sm:w-5" src="@/Images/Icons/cursor-typed.svg" alt="">
             </div>
-            <p class="text mt-0 mb-14 text-2xl text-center text-[#ffffffb3]">
+            <p class="text mt-0 mb-14 sm:mb-6 text-2xl text-center text-[#ffffffb3] lg:max-w-xl md:text-lg sm:text-xs">
                 Create SEO-optimized and plagiarism-free content
                 <br>
                 for your blogs, ads, emails, and website 10X faster.
             </p>
-            <a href="/" class=" mb-6 static flex h-14 min-w-[146px] py-2 px-8 flex-col justify-center items-center content-center rounded-[100px] text-white bg-[#705cf6] text-xl text-center font-bold">Start Writing For Free</a>
-            <div class="text-[#ffffff80]">No credit card required.</div>
+            <a href="/" class=" mb-6 static flex h-14 sm:h-10 sm:min-h-0 min-w-[146px] py-2 sm:text-base px-8 flex-col justify-center items-center content-center rounded-[100px] text-white bg-[#705cf6] text-xl text-center font-bold">Start Writing For Free</a>
+            <div class="text-[#ffffff80] sm:text-xs">No credit card required.</div>
         </div>
-        <div class="sec-1-fotos-div relative z-40 -mt-[500px] w-[1330px] -ml-14 pt-[500px]">
+        <div class="sec-1-fotos-div relative z-40 -mt-[500px] w-[1330px] -ml-14 pt-[500px] lg:hidden">
             <div 
             :style="
                `will-change: transform;
@@ -68,11 +68,11 @@
         <!-- Animation Canvas Section -->
 
         <div class="cta-button-flex flex pt-8 justify-center">
-            <a class="static flex min-w-[146px] py-3 px-8 flex-col justify-center items-center content-center rounded-[100px] bg-[#705cf6] text-white font-bold text-center" href="/">
+            <a class="static flex min-w-[146px] sm:min-h-0  sm:text-base sm:h-10 py-3 px-8 flex-col justify-center items-center content-center rounded-[100px] bg-[#705cf6] text-white font-bold text-center" href="/">
                 Sign up for free
             </a>
         </div>
-        <div class="text-block-3 mt-10 mb-2 text-white text-center">
+        <div class="text-block-3 mt-10 mb-2 text-white text-center sm:text-xs">
             Trusted by 1,000,000+ marketing teams, agencies and freelancers. 10,000+ 5-star ratings.
         </div>
         <Herofreetool />
@@ -92,7 +92,8 @@ import Herofreetool from '@/components/tools/Herofreetool.vue'
         typeArrayIndex: 0,
         charIndex: 0,
         // 
-        windowTop:0
+        windowTop:0,
+        position:0,
       }
     },
     methods: {
@@ -121,8 +122,13 @@ import Herofreetool from '@/components/tools/Herofreetool.vue'
         }
       },
        updateScroll(){
-        this.windowTop = window.scrollY;
-        console.log(this.windowTop);
+        this.position = window.scrollY
+        if(this.position >= 380){
+          this.windowTop = 380
+        }
+        else{
+          this.windowTop = this.position;
+        }
        }
     },
     created() {

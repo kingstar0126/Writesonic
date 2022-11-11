@@ -2,6 +2,11 @@
 module.exports = {
   content: [],
   theme: {
+    screens: {
+      'lg': {'max': '990px'},
+      'md': {'max': '640px'},
+      'sm': {'max': '540px'},
+    },
     extend: {
       keyframes: {
         marqueehorizontal: {

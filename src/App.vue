@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <section class="section-1 relative -mt-20 pt-28 pb-14 flex flex-[1] z-20">
+    <section class="section-1 relative -mt-20 pt-28 sm:pt-20 pb-14 flex flex-[1] z-20">
       <Section_1 />
     </section>
   </div>
