@@ -7,8 +7,8 @@
   </div>
 </template>
 <script>
-import Navbar  from '@/components/Navbar.vue';
-import Section_1  from '@/components/sections/section-1.vue';
+import Navbar  from "./components/Navbar.vue";
+import Section_1  from "./components/sections/section-1.vue";
 export default {
   components: { Navbar,Section_1}
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-container relative z-20 overflow-visible max-w-7xl mx-auto w-full flex justify-center flex-col lg:px-4 lg:mx-12 md:mx-0">
+    <div class="w-container relative z-20 overflow-visible max-w-7xl mx-auto w-full flex justify-center flex-col lg:px-4  md:mx-0">
         <div class="head-block2 relative z-50 flex my-16 sm:my-7  flex-col justify-center items-center">
             <h1 class="h1-typed-words text-white text-[80px] text-center sm:mb-0 leading-[84px] tracking-[-2.4px] sm:text-3xl font-bold mt-5 mb-3 lg:text-7xl md:text-5xl">Best Al Write for Creating</h1>
             <div class="wrapper-typed min-h-[140px] sm:min-h-min sm:my-1 -mt-6 flex items-center justify-start">
@@ -65,8 +65,7 @@
                 <div class="text-center mt-3 flex h-7 px-2 justify-center bg-[#bfc3d126] text-[#d1d5db] rounded-2xl ">Marketer</div>
             </div>          
         </div>
-        <!-- Animation Canvas Section -->
-
+        <AnimationBlock />
         <div class="cta-button-flex flex pt-8 justify-center">
             <a class="static flex min-w-[146px] sm:min-h-0  sm:text-base sm:h-10 py-3 px-8 flex-col justify-center items-center content-center rounded-[100px] bg-[#705cf6] text-white font-bold text-center" href="/">
                 Sign up for free
@@ -79,9 +78,10 @@
     </div>
 </template>
 <script>
-import Herofreetool from '@/components/tools/Herofreetool.vue'
+import AnimationBlock from "../Animation-block.vue";
+import Herofreetool from "../tools/Herofreetool.vue"
   export default {
-    components:{Herofreetool},
+    components:{Herofreetool,AnimationBlock},
     data: () => {
       return {
         typeValue: '',
@@ -129,6 +129,7 @@ import Herofreetool from '@/components/tools/Herofreetool.vue'
         else{
           this.windowTop = this.position;
         }
+        console.log(window.scrollY);
        }
     },
     created() {

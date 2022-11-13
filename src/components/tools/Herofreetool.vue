@@ -24,11 +24,8 @@
         <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635284040d7c320eb2cafd27_AIWritingAssistant_HighPerformer_Mid-Market_HighPerformer.svg" loading="lazy" alt="moodle logo" class="w-24 sm:w-9">
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            logos:[
+<script setup>
+const logos =[
                 { imgURL: 'https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635a1e47989f0f3acaa92d88_meesho.svg'},
                 { imgURL: 'https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635a1e46dfb493d4360789b5_rakuten.svg'},
                 { imgURL: 'https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635a1e47c66f9d253b3f40f7_spotify.svg'},
@@ -40,7 +37,4 @@ export default {
                 { imgURL: 'https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635a1e4771ea333a90b01f33_marriot.svg'},
                 { imgURL: 'https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635a1e49ccf682080d68f466_vodafone.svg'},
             ]
-        }
-    },
-}
 </script>
