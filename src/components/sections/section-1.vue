@@ -129,7 +129,6 @@ import Herofreetool from "../tools/Herofreetool.vue"
         else{
           this.windowTop = this.position;
         }
-        console.log(window.scrollY);
        }
     },
     created() {

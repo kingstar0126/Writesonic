@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-xl shadow-sm border  flex justify-between items-center w-full py-3 px-3 bg-white">
+    <div ref="header" class="rounded-xl shadow-sm border  flex justify-between items-center w-full py-3 px-3 bg-white">
         <div class="flex items-center">
             <img src="@/Images/Icons/robot-icon.svg">
             <h2 class="ml-2 font-semibold text-xs">Al Article Writer 3.0</h2>
@@ -15,5 +15,5 @@
         </div>
     </div>
 </template>
-<script setup>
-</script>
+
+<!-- 'transform: scale(117%) translateY(-36px)' -->
