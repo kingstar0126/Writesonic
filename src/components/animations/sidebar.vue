@@ -31,7 +31,7 @@
             </select>
         </div>
 
-        <div class="mt-6 p-4 mb-5 rounded-md flex justify-between bg-[#f7fbfe]">
+        <div class="mt-6 p-4 mb-[111px] rounded-md flex justify-between bg-[#f7fbfe]">
             <div>
                 <h1 class=" font-normal text-base">Write a title yourself</h1>
                 <p class="mt-1  text-xs text-gray-500">If this not selected, then Writesonic will <br>
