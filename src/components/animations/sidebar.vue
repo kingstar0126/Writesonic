@@ -1,5 +1,5 @@
 <template>
-    <div class="w-5/12 flex flex-col mt-4 px-4">
+    <div class="w-5/12 flex flex-col border-r  mt-4 px-4">
         <div class="flex w-full justify-between">
             <h4 class="text-[#7b7e89] text-xs">Topic</h4>
             <span class="text-xs text-[#cacdd3]">0/300</span>
