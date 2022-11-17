@@ -1,5 +1,5 @@
 <template>
-    <div class=" bg-white w-5/12 absolute bottom-4  rounded-2xl border-2 shadow-lg py-4 px-6 flex items-center  justify-between">
+    <div class=" bg-white w-5/12 left-0 absolute bottom-4  rounded-2xl border-2 shadow-lg py-4 px-6 flex items-center  justify-between">
         <div class="cursor-pointer rounded-full border-2 p-2"> <img src="@/Images/Icons/arrow-right.svg" class=" rotate-180 w-5" alt=""></div>
         <div :class="{' flex-row-reverse ' : num > 1}" class="flex items-center bg-[#f1f2fe] rounded-3xl  transition delay-500 ease-linear">
             <button @click="num++" class="text-white font-medium text-sm text-center rounded-3xl p-3 bg-[#705bf6]">Generate</button>

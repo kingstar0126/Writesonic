@@ -1,5 +1,5 @@
 <template>
-    <div class="w-5/12 flex flex-col border-r  mt-4 px-4">
+    <div class="w-5/12 h-[460px] flex flex-col border-r  mt-4 px-4">
         <div class="flex w-full justify-between">
             <h4 class="text-[#7b7e89] text-xs">Topic</h4>
             <span class="text-xs text-[#cacdd3]">0/300</span>
@@ -43,6 +43,36 @@
                     <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
                     <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none peer-focus:ring-4   rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#705bf6]"></div>
                 </label>
+            </div>
+        </div>
+         <hr>
+         <div class="flex w-full justify-between mt-8">
+            <h4 class="text-[#7b7e89] text-xs">Title</h4>
+            <span class="text-xs text-[#cacdd3]">56/300</span>
+        </div>
+        <div class="mt-2 flex flex-col w-full">
+            <div class=" border-[1px] rounded-md text-sm font-medium p-2">
+                Copywriting Vs. Content Writing: The Confusion Ends Here
+            </div>
+        </div>
+        <div class="flex w-full justify-between mt-8">
+            <h4 class="text-[#7b7e89] text-xs">Intro</h4>
+            <span class="text-xs text-[#cacdd3]">946/1500</span>
+        </div>
+        <div class="mt-2 flex flex-col w-full">
+            <div class=" border-[1px] rounded-md text-xs font-medium p-3">
+                With the rise in competition, every brand is
+                digital world. And here CONTENT CREATION comes
+                scrambling to stand out from the crowd in the
+                into the picture.
+                Content plays a crucial role in digital marketing
+                activities and is the driving force behind successful
+                campaigns, SEO, social media marketing, and more.
+                Every single piece of content acts as a chance for a
+                business, an opportunity to grow your brand
+                presence, drive more engagement, and in short,
+                jump to content creation.
+                connect with your potential customer. So now, let's
             </div>
         </div>
     </div>

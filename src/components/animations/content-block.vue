@@ -7,6 +7,7 @@
         <hr>
         <block_4/>
         <hr>
+        <block_5/>
     </div>
 </template>
 <script setup>
@@ -14,4 +15,5 @@
  import block_2 from './content_blocks/content-2.vue'
  import block_3 from './content_blocks/content-3.vue'
  import block_4 from './content_blocks/content-4.vue'
+ import block_5 from './content_blocks/content-5.vue'
 </script>
