@@ -15,7 +15,7 @@
             <div class="overflow-hidden h-[500px]">
             <contentBlock2 id="contentBlock2" />
             </div>
-            <article2  class="z-[999999999]"/>
+            <article2  id="article2" class="z-[999999999]"/>
             <div class="social-medias flex flex-col top-[60%]  absolute">
                 <a href="/" class="bg-[#6b7280] mb-3 rounded-full w-8 flex justify-center p-2">
                     <img  src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/6291e61b354f09e25db94135_facebook.svg" alt="">
@@ -62,7 +62,11 @@ onMounted(() => {
                 var modalBlockPosition = 0
                 var modalYPosition = 0
                 var modalOpacity = 0
+                var modal2Opacity = 0
+                var modal2YPosition = 0
                 var mainBlockOpacity = 1
+                var animateBlockOpacity= 0
+                var contentAnimateBlockPosition2 = 0
                 if(windowY >= 230){
                     headerBlockPosition -= windowY / 10  - 23.3
                     headerBlockScale -= windowY / 3000
@@ -91,6 +95,7 @@ onMounted(() => {
                             sidebarBlockPosition = sidbarBlockFinalyPosition
                             sidebarBlockPosition / 10   
                         }
+                        
                     } 
                    if(generateBlockPosition <= 0.94){
                     generateBlockPosition = 0.94
@@ -100,33 +105,40 @@ onMounted(() => {
                     mainBlockOpacity -= (windowY / 600)
                 }
                 else{
-                    mainBlockOpacity  =1
+                    mainBlockOpacity = 1
                 }
                 if(windowY >= 599){
-                var animateBlockOpacity= 0
-                var contentAnimateBlockPosition2 = 0
                     animateBlockOpacity += (windowY /500 ) - 1.10
                     if(this.document.getElementById('animationBlockPage')){
                            this.document.getElementById('animationBlockPage').style.opacity =`${animateBlockOpacity}`
                            this.document.getElementById('contentBlock2').style.transform = `translateY(-${contentAnimateBlockPosition2.toFixed(0)}px)`
-                         }
-                         if(contentAnimateBlockPosition2 >= 328){
-                            contentAnimateBlockPosition2 = 328
+                           if(animateBlockOpacity >= 1){
+                            modal2Opacity += (windowY / 1400 ) 
+                            modal2YPosition += windowY / 15
+                            if(modal2YPosition >= 103){
+                                modal2YPosition = 103
+                            }
                            }
-                    if(windowY >= 1075){
+                           this.document.getElementById('article2').style.opacity = `${modal2Opacity}`
+                           this.document.getElementById("article2").style.transform = `translateY(-${modal2YPosition}px)`
+                           if(contentAnimateBlockPosition2 >= 328){
+                            contentAnimateBlockPosition2 = 328
+                           } 
+                           if(windowY >= 1075){
                         contentAnimateBlockPosition2 += (windowY - 1075)
                         if(contentAnimateBlockPosition2 >= 328){
                             contentAnimateBlockPosition2 = 328
                            }
-                        this.document.getElementById('contentBlock2').style.transform = `translateY(-${contentAnimateBlockPosition2}px)`
+                        this.document.getElementById("contentBlock2").style.transform = `translateY(-${contentAnimateBlockPosition2}px)`
+                        }
                         }
                 }
-                console.log(contentAnimateBlockPosition2);
+                
                 this.document.getElementById('header').style.transform = ` scale(${headerBlockScale}) translateY(-${headerBlockPosition}px)`
                 this.document.getElementById('contentBlock').style.transform = `translateY(-${contentAnimateBlockPosition.toFixed(0)}px)`
                 this.document.getElementById('generateBlock').style.transform = `scale(${generateBlockPosition})`
                 this.document.getElementById('sidebar').style.transform = `translateY(-${sidebarBlockPosition}px)`
-                this.document.getElementById('article1').style.transform = `translateY(-${modalYPosition}px)`
+                this.document.getElementById("article1").style.transform = `translateY(-${modalYPosition}px)`
                 this.document.getElementById('article1').style.opacity = `${modalOpacity}`
                 this.document.getElementById('animatemainBlock').style.opacity = `${mainBlockOpacity}`
           });
