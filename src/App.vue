@@ -6,6 +6,7 @@
     </section>
     <section class="bg-white rounded-t-[48px] py-11">
       <Feature />
+      <Slider />
       <Section_6 />
     </section>
   </div>
@@ -14,5 +15,6 @@
 import Navbar  from "./components/Navbar.vue";
 import Section_1  from "./components/sections/section-1.vue";
 import Feature from './components/sections/section-feature.vue'
+import Slider from "./components/animations/slider/main-slider.vue";
 import Section_6  from "./components/sections/section-6.vue";
 </script>
