@@ -23,6 +23,9 @@
                                <button @click="nextSlide" class="arrow-right rounded-[50px] bottom-0 bg-no-repeat bg-[auto,10px] bg-center mr-72 -scale-x-100 absolute -top-4 hover:bg-[#1f2937] right-0 bg-arrow-right w-8 h-8   bg-[#4b5563]"></button>
                          </div>
                       </div>
+                      <div class="flex justify-center w-full pt-24">
+                        <a class="text-white bg-[#705cf6] rounded-[100px] text-center font-bold px-6 text-base py-3 mx-0" href="#">Write articles that rank for free</a>
+                      </div>
                 </div>
             </div>
         </div>

@@ -9,6 +9,9 @@
       <Slider />
       <Section_6 />
     </section>
+    <section class="bg-white">
+      <Section_8 />
+    </section>
   </div>
 </template>
 <script setup>
@@ -17,4 +20,5 @@ import Section_1  from "./components/sections/section-1.vue";
 import Feature from './components/sections/section-feature.vue'
 import Slider from "./components/animations/slider/main-slider.vue";
 import Section_6  from "./components/sections/section-6.vue";
+import Section_8 from "./components/sections/section-8.vue";
 </script>
