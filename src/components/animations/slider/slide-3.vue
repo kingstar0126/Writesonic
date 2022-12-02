@@ -19,19 +19,19 @@
             <div class="flex flex-col justify-between pt-12 pr-12 pb-8 pl-8 whitespace-normal text-left">
                 <div>
                     <h1 class=" mb-6 text-4xl font-bold mt-5">
-                        I struggle with putting words together, and Writesonic is my savior!
+                        I've been researching a good AI writing tool for a while now. And finally found Writesonic.
                     </h1>
                     <p class="text-[#6b7280] text-lg pt-0 mb-2">
-                        I found Writesonic when I was struggling with thinking of creative ideas. It writes my emails and generates ideas—an awesome tool for sure.
+                        This AI writing Assistant can write blog posts, landing pages, Google Ads, Facebook ads, product descriptions, and more. A must-have tool for every freelancer!
                     </p>
                 </div>
                 <div class="flex flex-col">
                     <div class="mb-4 w-10 h-10 rounded-full overflow-hidden">
-                        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/62aecf7a6d5779aff0ae6b71_561333_f7e99e8a-658d-4b5d-97e3-03c5658c138c_thumbnail_250x250.jpeg" >
+                        <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/62aecd8c09379c9c64e05843_HEqdZV8STPWUeVaLU2rg_NvE4gn637FnN6rfO.jpeg" >
                     </div>
                     <div>
-                        <h1 class="font-bold text-sm">Melissa Sandoval</h1>
-                        <p class="text-[#9ca3af] text-sm">Digital Strategist | Content Creator</p>
+                        <h1 class="font-bold text-sm">Mark Paterson</h1>
+                        <p class="text-[#9ca3af] text-sm">Digital Nomad and Affiliate Marketer</p>
                     </div>
                 </div>
             </div>
@@ -44,12 +44,6 @@ import {  ref } from 'vue'
 import { useMediaControls } from '@vueuse/core'
 const video = ref()
 const { playing, muted } = useMediaControls(video, { 
-  src: 'https://writesonic.s3.amazonaws.com/video_3+(540p).mp4',
+  src: 'https://writesonic.s3.amazonaws.com/video_2+(540p).mp4',
 })
 </script>
-
-<style>
-.w-slide{
-    transition: all 0.7s;
-}
-</style>

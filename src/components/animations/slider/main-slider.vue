@@ -8,15 +8,44 @@
                 </p>
                 <div class="block-slider overflow-hidden h-[850px] mt-12 px-24 rounded-[48px] pt-16 bg-[#050a1b]">
                     <div class="slider h-auto max-w-[1128px] mx-auto bg-transparent relative">
-                        <div class="w-slider z-[1] relative block left-0 right-0 h-full whitespace-nowrap">
-                            <slide1 />
+                        <div class="w-slider z-[1] relative block left-0 right-0 h-full overflow-visible whitespace-nowrap">
+                            <slide1 :style="{ 'margin-left': '-' + (100 * slideIndex) + '%'}"  />
+                            <slide2 />
+                            <slide3 />
                         </div>
-                    </div>
+                        <div class="slide-nav  absolute bottom-[-40px] mt-3 top-auto left-0 w-full right-0 m-auto">
+                            <button @click="prevSlide" class="arrow-right rounded-[50px] bottom-0 bg-no-repeat bg-[auto,10px] bg-center ml-72 absolute -top-4 hover:bg-[#1f2937] right-24 bg-arrow-right w-8 h-8 left-0  bg-[#4b5563]"></button>
+                              <div class="flex w-fit m-auto ">
+                                  <div class="slide-dot mx-3  cursor-pointer w-20 h-[2px]" :class="{'bg-white' : slideIndex === 0, 'bg-[#4B5563]' : slideIndex !== 0 }"></div>
+                                  <div class="slide-dot mx-3  cursor-pointer w-20 h-[2px]" :class="{'bg-white' : slideIndex === 1, 'bg-[#4B5563]' : slideIndex !== 1 }"></div>
+                                  <div class="slide-dot mx-3  cursor-pointer w-20 h-[2px]" :class="{'bg-white' : slideIndex === 2, 'bg-[#4B5563]' : slideIndex !== 2 }"></div>
+                               </div>
+                               <button @click="nextSlide" class="arrow-right rounded-[50px] bottom-0 bg-no-repeat bg-[auto,10px] bg-center mr-72 -scale-x-100 absolute -top-4 hover:bg-[#1f2937] right-0 bg-arrow-right w-8 h-8   bg-[#4b5563]"></button>
+                         </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script setup>
+import {ref} from 'vue'
 import slide1 from './slide-1.vue';
+import slide2 from './slide-2.vue';
+import slide3 from './slide-3.vue';
+let slideIndex = ref(0)
+
+function nextSlide(){
+    slideIndex.value++
+    if(slideIndex.value >= 3){
+        slideIndex.value = 0
+    }
+}
+function prevSlide(){
+    slideIndex.value--
+    if(slideIndex.value === 0-1){
+        slideIndex.value = 2
+    }
+}
+
 </script>
