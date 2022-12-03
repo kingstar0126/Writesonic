@@ -11,6 +11,7 @@
     </section>
     <section class="bg-white">
       <Section_8 />
+      <Section_9 />
     </section>
   </div>
 </template>
@@ -21,4 +22,5 @@ import Feature from './components/sections/section-feature.vue'
 import Slider from "./components/animations/slider/main-slider.vue";
 import Section_6  from "./components/sections/section-6.vue";
 import Section_8 from "./components/sections/section-8.vue";
+import Section_9 from "./components/sections/section-9.vue";
 </script>
