@@ -14,10 +14,12 @@
       <Section_8 />
       <Section_9 />
     </section>
+    <Footer />
   </div>
 </template>
 <script setup>
 import Navbar  from "./components/Navbar.vue";
+import Footer  from "./components/footer.vue";
 import Section_1  from "./components/sections/section-1.vue";
 import Feature from './components/sections/section-feature.vue'
 import Slider from "./components/animations/slider/main-slider.vue";

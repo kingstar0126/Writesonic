@@ -14,6 +14,9 @@
                     <p class="max-w-[700px]  text-[#6b7280] text-base" v-html="question.text"></p>
                 </div>
             </div>
+            <img class="absolute left-auto top-auto right-[70px] bottom-[300px] w-3" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6736b45c9fd_rose-star.png" alt="">
+            <img class="absolute left-auto top-auto right-[140px] bottom-[220px] w-4" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e61b0345c9fc_blue-star.png" alt="">
+            <img class="absolute left-auto right-24 bottom-24 h-14" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6fe4745c9fb_purple-star.png" alt="">
         </div>
     </div>
 </template>

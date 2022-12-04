@@ -94,12 +94,10 @@ onMounted(()=>{
     function update(){
       var rect =animateblock.value?.getBoundingClientRect()
       var startTransform = -551
-      if(rect.y > startTransform){
-        rect.y = 0
-      }
       if(rect.y <= startTransform){
       contant.value.style.transform = `translateY(${ (rect.y - startTransform )}px)`
       } 
+      
       console.log(rect.y);
     }
 })
