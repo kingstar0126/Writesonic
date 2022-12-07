@@ -16,8 +16,8 @@
                 <br>
                 for your blogs, ads, emails, and website 10X faster.
             </p>
-            <a href="/" class=" mb-6 static flex h-14 sm:h-10 sm:min-h-0 min-w-[146px] py-2 sm:text-base px-8 flex-col justify-center items-center content-center rounded-[100px] text-white bg-[#705cf6] text-xl text-center font-bold">Start Writing For Free</a>
-            <div class="text-[#ffffff80] sm:text-xs">No credit card required.</div>
+           <Button class="text-xl" title="Start Writing For Free" />
+            <div class="text-[#ffffff80] mt-2 sm:text-xs">No credit card required.</div>
         </div>
         <div class="sec-1-fotos-div relative z-40 -mt-[500px] w-[1330px] -ml-14 pt-[500px] lg:hidden">
             <div 
@@ -66,10 +66,8 @@
             </div>          
         </div>
         <AnimationBlock />
-        <div class="cta-button-flex flex pt-8 justify-center">
-            <a class="static flex min-w-[146px] sm:min-h-0  sm:text-base sm:h-10 py-3 px-8 flex-col justify-center items-center content-center rounded-[100px] bg-[#705cf6] text-white font-bold text-center" href="/">
-                Sign up for free
-            </a>
+        <div class="flex pt-8 justify-center">
+          <Button class="text-base" title="Sign Up for free" />
         </div>
         <div class="text-block-3 mt-10 mb-2 text-white text-center sm:text-xs">
             Trusted by 1,000,000+ marketing teams, agencies and freelancers. 10,000+ 5-star ratings.
@@ -78,10 +76,11 @@
     </div>
 </template>
 <script>
+import Button from "../tools/Button.vue"
 import AnimationBlock from "../Animation-block.vue";
 import Herofreetool from "../tools/Herofreetool.vue"
   export default {
-    components:{Herofreetool,AnimationBlock},
+    components:{Herofreetool,AnimationBlock,Button},
     data: () => {
       return {
         typeValue: '',

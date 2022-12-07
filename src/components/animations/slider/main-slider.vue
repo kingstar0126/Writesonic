@@ -24,7 +24,7 @@
                          </div>
                       </div>
                       <div class="flex justify-center w-full pt-24">
-                        <a class="text-white bg-[#705cf6] rounded-[100px] text-center font-bold px-6 text-base py-3 mx-0" href="#">Write articles that rank for free</a>
+                        <Button title="Write articles that rank for free" />
                       </div>
                 </div>
             </div>
@@ -33,10 +33,12 @@
 </template>
 <script setup>
 import {ref} from 'vue'
+import Button from '@/components/tools/Button.vue'
 import slide1 from './slide-1.vue';
 import slide2 from './slide-2.vue';
 import slide3 from './slide-3.vue';
 let slideIndex = ref(0)
+
 
 function nextSlide(){
     slideIndex.value++
@@ -46,7 +48,7 @@ function nextSlide(){
 }
 function prevSlide(){
     slideIndex.value--
-    if(slideIndex.value === 0-1){
+    if(slideIndex.value === -1){
         slideIndex.value = 2
     }
 }

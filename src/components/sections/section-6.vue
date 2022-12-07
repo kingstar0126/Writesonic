@@ -192,10 +192,10 @@
             </div>
         </div>   
         <div class="mt-8 w-full flex justify-center">
-            <a href="/" class=" text-center text-white rounded-[100px] bg-[#705cf6] transition font-bold py-[10px] px-8 h-12  text-base ">
-                Get Started for free
-            </a>
+            <Button title="Get Started for free" />
         </div>
     </div>
 </template>
-<script setup></script>
+<script setup>
+import Button from '../tools/Button.vue';
+</script>

@@ -1,8 +1,8 @@
 <template>
     <div ref="el" class="relative bg-[#111827] h-[600vh] z-[999999] rounded px-12  mx-auto">
     <div class=" mt-16 h-fit bg-white rounded-[32px] sticky z-[999] top-[5vh] border-[#232d3f] border-[13px]  ">
-        <div  v-if="y <= 3510" id="animatemainBlock"   class="w-[60rem] rounded-[32px] py-2 px-3   bg-white relative z-[888]">
-            <animateHeaderVue  :y="y" class="animation_header relative z-[9999] transition-all"  id="header" />
+        <div  v-if="y <= 3510" ref="animatemainBlock"   class="w-[60rem] rounded-[32px] py-2 px-3   bg-white relative z-[888]">
+            <animateHeaderVue id="header"  :y="y" class="animation_header relative z-[9999] transition-all"  />
             <div class="flex relative  overflow-hidden"> 
                 <sidebar id="sidebar" />
                 <contentBlock id="contentBlock" />
@@ -46,6 +46,9 @@ import { useScroll,useWindowScroll} from '@vueuse/core'
 import { onMounted,ref } from "vue";
 
 const el = ref()
+// const animateblock = ref()
+// const header = ref()
+
 const scroll = useScroll(el)
 const { y } = useWindowScroll()
 console.log(scroll.y.value);
@@ -100,6 +103,7 @@ onMounted(() => {
                    if(generateBlockPosition <= 0.94){
                     generateBlockPosition = 0.94
                    }
+                   
                 } 
                 if(windowY >= 385){
                     mainBlockOpacity -= (windowY / 600)
@@ -133,7 +137,6 @@ onMounted(() => {
                         }
                         }
                 }
-                
                 this.document.getElementById('header').style.transform = ` scale(${headerBlockScale}) translateY(-${headerBlockPosition}px)`
                 this.document.getElementById('contentBlock').style.transform = `translateY(-${contentAnimateBlockPosition.toFixed(0)}px)`
                 this.document.getElementById('generateBlock').style.transform = `scale(${generateBlockPosition})`

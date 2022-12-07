@@ -27,4 +27,5 @@ import Section_6  from "./components/sections/section-6.vue";
 import Section_4  from "./components/sections/section-4.vue";
 import Section_8 from "./components/sections/section-8.vue";
 import Section_9 from "./components/sections/section-9.vue";
+
 </script>

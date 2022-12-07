@@ -49,7 +49,7 @@
                              <p class=" text-[#4b5563] mb-0 text-xs mr-3">Oliver Hajjar from Crux Knowledge</p>
                             <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e67ed845ca54_logo-g2.svg" loading="lazy" alt="">
                         </div>
-                        <a href="/" class="text-white text-base px-6 min-w-[146px] text-center py-3 font-bold bg-[#705cf6] rounded-[100px] transition-all mt-9 hover:bg-[#948bfa]">Claim 6000+ words for free</a>
+                        <Button class=" w-fit" title="Claim 6000+ words for free" />
                         </div>
                    </div> 
                 </div>
@@ -85,6 +85,7 @@
     </div>
 </template>
 <script setup>
+import Button from "@/components/tools/Button.vue"
 import {onMounted, ref} from 'vue'
 
 const animateblock = ref()
@@ -97,8 +98,6 @@ onMounted(()=>{
       if(rect.y <= startTransform){
       contant.value.style.transform = `translateY(${ (rect.y - startTransform )}px)`
       } 
-      
-      console.log(rect.y);
     }
 })
 

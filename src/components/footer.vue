@@ -66,7 +66,7 @@
             </div>
             <div class="flex mb-10 py-6 px-8 justify-between items-center bg-[#f6f6fd] rounded-[50px]">
                 <div class="text-xl font-bold">Earn 30% Lifetime Commission as an Affiliate!</div>
-                <a href="/" class="bg-[#705cf6] px-4 py-2 text-white font-bold rounded-[50px] hover:bg-[#948bfa]">Join the program</a>
+                <Button title="Join the program" />
             </div>
             <div class="flex justify-between">
                 <div class="flex">
@@ -86,3 +86,7 @@
         </div>
     </div>
 </template>
+
+<script setup>
+import Button from './tools/Button.vue';
+</script>
