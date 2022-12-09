@@ -34,14 +34,14 @@
     </div>
 </template>
 <script setup>
-import animateHeaderVue from "./animations/animate-header.vue";
-import animateHeader2Vue from "./animations/animate-header2.vue";
-import sidebar from "./animations/sidebar.vue";
-import contentBlock from "./animations/content-block.vue"
-import generate from "./animations/generate.vue";
-import article1 from "./animations/article-1.vue";
-import article2 from "./animations/article-2.vue";
-import contentBlock2 from './animations/content_blocks/content-6.vue'
+import animateHeaderVue from "./animate-header.vue";
+import animateHeader2Vue from "./animate-header2.vue";
+import sidebar from "./sidebar.vue";
+import contentBlock from "./content-block.vue"
+import generate from "./generate.vue";
+import article1 from "./article-1.vue";
+import article2 from "./article-2.vue";
+import contentBlock2 from './content_blocks/content-6.vue'
 import { useScroll,useWindowScroll} from '@vueuse/core'
 import { onMounted,ref } from "vue";
 

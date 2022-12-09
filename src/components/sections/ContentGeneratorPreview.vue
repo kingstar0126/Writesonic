@@ -56,9 +56,9 @@
               </div>
               <div class=" w-[500px] py-14 pb-14 top-0 mr-16 sticky">
                 <div  ref="animateblock"></div>
-                <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/629fa78d38c3a82f0babfbd6_Feature-card-2.png" loading="lazy" alt="" width="194" class=" absolute left-auto top-0 right-0 bottom-auto mt-[4.5rem] mr-5">
+                <img id="featurcard" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/629fa78d38c3a82f0babfbd6_Feature-card-2.png" loading="lazy" alt="" width="194" class=" absolute z-50 left-auto top-0 right-0 bottom-auto mt-[4.5rem] mr-5">
                 <div class=" rounded-[32px] shadow-lg px-5 py-5 pb-8 flex flex-col h-[494px] overflow-hidden bg-white">
-                    <div ref="contant" class="contant_1 w-[460px] mx-auto flex flex-col">
+                    <div ref="contant" class="contant_1 relative z-40 w-[460px] mx-auto flex flex-col">
                         <div class="flex py-5 justify-between">
                             <div class="flex items-center">
                                 <h1 class=" mr-2 text-[#9ca3af]">Topic: Cryptocurrencies</h1>

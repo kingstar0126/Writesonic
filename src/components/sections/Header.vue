@@ -77,8 +77,8 @@
 </template>
 <script>
 import Button from "../tools/Button.vue"
-import AnimationBlock from "../Animation-block.vue";
-import Herofreetool from "../tools/Herofreetool.vue"
+import AnimationBlock from "../animations/AnimationBlock.vue";
+import Herofreetool from "../tools/HeroFreeTool.vue"
   export default {
     components:{Herofreetool,AnimationBlock,Button},
     data: () => {

@@ -2,30 +2,30 @@
   <div>
     <Navbar />
     <section class="section-1 relative -mt-20 pt-28 sm:pt-20 pb-14 flex flex-[1] z-20">
-      <Section_1 />
+      <Header />
     </section>
     <section class="bg-white rounded-t-[48px] py-11">
       <Feature />
-      <Section_4 />
-      <Slider />
-      <Section_6 />
+      <ContentGeneratorPreview />
+      <OpinionsSlider />
+      <Opinions />
     </section>
     <section class="bg-white">
-      <Section_8 />
-      <Section_9 />
+      <Faq />
+      <LastPreview />
     </section>
     <Footer />
   </div>
 </template>
 <script setup>
 import Navbar  from "./components/Navbar.vue";
-import Footer  from "./components/footer.vue";
-import Section_1  from "./components/sections/section-1.vue";
-import Feature from './components/sections/section-feature.vue'
-import Slider from "./components/animations/slider/main-slider.vue";
-import Section_6  from "./components/sections/section-6.vue";
-import Section_4  from "./components/sections/section-4.vue";
-import Section_8 from "./components/sections/section-8.vue";
-import Section_9 from "./components/sections/section-9.vue";
+import Footer  from "./components/Footer.vue";
+import Header  from "./components/sections/Header.vue";
+import Feature from './components/sections/Feature.vue'
+import OpinionsSlider from "./components/slider/OpinionsSlider.vue";
+import Opinions  from "./components/sections/Opinions.vue";
+import ContentGeneratorPreview  from "./components/sections/ContentGeneratorPreview.vue";
+import Faq from "./components/sections/Faq.vue";
+import LastPreview from "./components/sections/LastPreview.vue";
 
 </script>
