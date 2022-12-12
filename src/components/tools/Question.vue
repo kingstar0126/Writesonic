@@ -1,14 +1,14 @@
 <template>
-    <div class="block-question w-[800px] max-w-[800px] py-5 px-6 mb-4 border rounded-2xl cursor-pointer border-[#e5e7eb]">
+    <div class="block-question w-[800px] lg:w-full max-w-[800px] py-5 px-6 mb-4 border rounded-2xl cursor-pointer border-[#e5e7eb]">
         <div class="flex justify-between items-center">
-        <h3 class="question text-lg font-bold">{{ question.title }}</h3>
+        <h3 class="question text-lg font-bold mr-1 md:font-semibold">{{ question.title }}</h3>
          <div class="div-open-question w-6 h-6 flex ">
-            <img v-if="!question.isActive" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e62bea45c9cf_down-faq.svg" loading="lazy">
-            <img v-else src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e615b245c9d0_up-faq.svg" loading="lazy">
+            <img v-if="!question.isActive" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e62bea45c9cf_down-faq.svg" loading="lazy" class=" w-5 lg:min-w-[20px]">
+            <img v-else src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e615b245c9d0_up-faq.svg" loading="lazy" class=" w-5 lg:min-w-[20px]">
           </div>
         </div>
         <div v-if="question.isActive" class="relative -mt-10 pt-11">
-          <p class="max-w-[700px]  text-[#6b7280] text-base" v-html="question.text"></p>
+          <p class="max-w-[700px]  text-[#6b7280] text-base md:text-xs" v-html="question.text"></p>
         </div>
     </div>
 </template>

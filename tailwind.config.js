@@ -2,10 +2,18 @@
 module.exports = {
   content: [],
   theme: {
+    // borderRadius: {
+    //   '3xl': '24px',
+    //   '4xl': '32px',
+    //   'full': '9999px'
+    // },
     screens: {
+      'xxl': {'max': '1200px'},
       'lg': {'max': '990px'},
       'md': {'max': '640px'},
       'sm': {'max': '540px'},
+      'xl': {'max': '430px'},
+      'mxl':{'min': '430px'}
     },
     extend: {
       keyframes: {

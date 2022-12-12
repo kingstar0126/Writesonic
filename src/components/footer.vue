@@ -1,8 +1,8 @@
 <template>
     <div class="relative pt-24 pb-6 bg-white">
         <div class="w-container relative  max-w-7xl mx-auto  w-full pt-12 pb-9 flex justify-center flex-col lg:px-4  md:mx-0">
-            <div class=" grid mb-16 auto-cols-fr grid-cols-[2fr,auto]">
-                <div class="flex flex-col w-[228px]">
+            <div class=" grid mb-16 auto-cols-fr grid-cols-[2fr,auto] lg:grid-cols-1">
+                <div class="flex flex-col w-56 lg:mb-7">
                     <a href="/" class="mb-6 flex">
                         <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6c83e45c9d1_black-logo.svg" loading="lazy" alt="Black logo" class="image-22">
                     </a>
@@ -11,7 +11,7 @@
                         <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/635284040d7c320eb2cafd27_AIWritingAssistant_HighPerformer_Mid-Market_HighPerformer.svg" loading="lazy" alt="moodle logo" class="review-badge-item w-14 mr-4 footer">
                     </div>
                 </div>
-                <div class="flex auto-cols-fr gap-[77px] ">
+                <div class="flex md:flex-col auto-cols-fr gap-20 lg:gap-9">
                     <div>
                         <a href="/" class=" mb-5 font-bold">Free tools</a>
                         <div class="grid justify-start items-start gap-4 grid-cols-1 mt-5">
@@ -64,16 +64,16 @@
                     </div>
                 </div>
             </div>
-            <div class="flex mb-10 py-6 px-8 justify-between items-center bg-[#f6f6fd] rounded-[50px]">
-                <div class="text-xl font-bold">Earn 30% Lifetime Commission as an Affiliate!</div>
+            <div class="flex mb-10 py-6 px-8 justify-between items-center bg-[#f6f6fd] rounded-[50px] lg:flex-col">
+                <div class="text-xl font-bold lg:mb-4 lg:font-semibold md:text-center">Earn 30% Lifetime Commission as an Affiliate!</div>
                 <Button title="Join the program" />
             </div>
-            <div class="flex justify-between">
-                <div class="flex">
-                    <p class="text-[#6b7280] mr-8 text-sm">© 2022 Writesonic, Inc. All rights reserved.</p>
+            <div class="flex justify-between md:flex-col-reverse">
+                <div class="flex md:flex-col-reverse md:mt-3 md:items-center">
+                    <p class="text-[#6b7280] mr-8 md:mr-0 text-sm">© 2022 Writesonic, Inc. All rights reserved.</p>
                     <p class="text-[#6b7280] text-sm">Development by <a href="https://github.com/Ilyapashayan20" target="_blank" class="mr-2 text-[#e26e3a] font-semibold">Pashayan.info</a></p>
                 </div>
-                <div class="flex gap-10 items-center">
+                <div class="flex gap-10 items-center md:flex-col-reverse">
                     <div class="flex gap-4">
                         <a href="/" class="text-[#6b7280] text-sm">Terms</a>
                         <a href="/" class="text-[#6b7280] text-sm">Privacy Policy</a>
