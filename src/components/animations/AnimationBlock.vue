@@ -137,13 +137,14 @@ onMounted(() => {
                         }
                         }
                 }
-                this.document.getElementById('header').style.transform = ` scale(${headerBlockScale}) translateY(-${headerBlockPosition}px)`
-                this.document.getElementById('contentBlock').style.transform = `translateY(-${contentAnimateBlockPosition.toFixed(0)}px)`
-                this.document.getElementById('generateBlock').style.transform = `scale(${generateBlockPosition})`
-                this.document.getElementById('sidebar').style.transform = `translateY(-${sidebarBlockPosition}px)`
-                this.document.getElementById("article1").style.transform = `translateY(-${modalYPosition}px)`
-                this.document.getElementById('article1').style.opacity = `${modalOpacity}`
-                this.document.getElementById('animatemainBlock').style.opacity = `${mainBlockOpacity}`
+                // this.document.getElementById('header').style.transform = ` scale(${headerBlockScale}) translateY(-${headerBlockPosition}px)`
+                // this.document.getElementById('contentBlock').style.transform = `translateY(-${contentAnimateBlockPosition.toFixed(0)}px)`
+                // this.document.getElementById('generateBlock').style.transform = `scale(${generateBlockPosition})`
+                // this.document.getElementById('sidebar').style.transform = `translateY(-${sidebarBlockPosition}px)`
+                // this.document.getElementById("article1").style.transform = `translateY(-${modalYPosition}px)`
+                // this.document.getElementById('article1').style.opacity = `${modalOpacity}`
+                // this.document.getElementById('animatemainBlock').style.opacity = `${mainBlockOpacity}`
+                console.log(modalOpacity + '///' + mainBlockOpacity);
           });
       })
 

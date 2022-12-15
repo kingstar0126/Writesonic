@@ -7,9 +7,9 @@
             <div class="block-banner-icon absolute top-auto h-[360px] left-0 right-0 bottom-0 lg:hidden ">
                 <img class="image-banner border-[#ffffff1a] absolute left-0 top-auto right-0 bottom-0 h-[317px] mx-auto pt-3 px-3 border rounded-t-[44px]" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e652e045c98b_content.png" loading="lazy" alt="" srcset="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e652e045c98b_content-p-500.png 500w, https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e652e045c98b_content-p-800.png 800w, https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e652e045c98b_content.png 1717w" sizes="(max-width: 991px) 100vw, (max-width: 1439px) 80vw, 847.875px">
                 <div class="relative w-full mx-auto max-w-[900px] h-[360px]">
-                    <img class=" absolute left-[15%] top-5 right-auto bottom-auto" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6412445c9ee_landing.png" loading="lazy" width="55.5">
-                    <img class=" absolute left-auto top-[-5%]  right-0 max-h-[156px] bottom-auto" src="	https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/62f3862888c0c37a980564f0_Feature-card.png" loading="lazy" width="251.5">
-                    <img class=" w-14  absolute left-0 top-[55%] right-auto bottom-0" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6621945c97d_rose-molniya.png" loading="lazy">
+                    <img  v-motion-pop-visible class=" absolute left-[15%] top-5 right-auto bottom-auto" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6412445c9ee_landing.png" loading="lazy" width="55.5">
+                    <img v-motion-slide-visible-top class=" absolute left-auto top-[-5%]  right-0 max-h-[156px] bottom-auto" src="	https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/62f3862888c0c37a980564f0_Feature-card.png" loading="lazy" width="251.5">
+                    <img  v-motion-roll-visible-left class=" w-14  absolute left-0 top-[55%] right-auto bottom-0" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6621945c97d_rose-molniya.png" loading="lazy">
                 </div>
             </div>
         </div>
@@ -17,6 +17,8 @@
 </template>
 <script setup>
 import Button from '../tools/Button.vue';
+import { useMotions } from '@vueuse/motion'
+useMotions
 </script>
 <style>
 .image-banner{

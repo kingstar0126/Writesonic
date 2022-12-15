@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden pt-36">
+    <div class="overflow-hidden pt-36 mxl:mt-56">
         <div class="max-w-[1224px] w-full relative mx-auto overflow-visible flex-col justify-center items-stretch gap-4 object-fill grid-cols-[1fr,1fr] auto-cols-fr ">
             <div clas="box_video">
                 <h2 class="flex m-auto w-fit h-fit text-[56px] lg:text-5xl md:text-4xl xl:text-2xl  leading-[78px] text-center font-bold">Hear from the <img class="mx-3 w-16 lg:hidden" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6056545ca5a_rose-check.png" alt=""> Writesonic Community</h2>
