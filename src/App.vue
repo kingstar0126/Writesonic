@@ -5,6 +5,7 @@
       <Header />
     </section>
     <section class="bg-white rounded-t-[48px] py-11">
+      <WritesonicToolsPreview />
       <Feature />
       <ContentGeneratorPreview />
       <OpinionsSlider />
@@ -27,5 +28,6 @@ import Opinions  from "@/components/sections/Opinions.vue";
 import ContentGeneratorPreview  from "@/components/sections/ContentGeneratorPreview.vue";
 import Faq from "@/components/sections/Faq.vue";
 import LastPreview from "@/components/sections/LastPreview.vue";
+import WritesonicToolsPreview from "./components/sections/WritesonicToolsPreview.vue";
 
 </script>

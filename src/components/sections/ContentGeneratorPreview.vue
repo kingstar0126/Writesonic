@@ -77,7 +77,7 @@
                             <img id="animate-outiline" src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e65c0f45ca21_intro%20-%20purple-2.svg" loading="lazy" alt="" class="absolute top-0 left-0 right-0 bottom-0 opacity-0">
                             <img src="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6877845ca71_grey-outlines.png" loading="lazy" alt="" srcset="https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6877845ca71_grey-outlines-p-500.png 500w, https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6877845ca71_grey-outlines-p-800.png 800w, https://uploads-ssl.webflow.com/627a1044a798e6627445c8d1/627a1045a798e6877845ca71_grey-outlines.png 920w" sizes="(max-width: 991px) 100vw, 460px" class="">
                         </div>
-                        <div class=" mt-20 px-5">
+                        <div class=" mt-20 px-5 flex">
                             <div class="flex flex-col font-bold text-xl w-64">
                                 <h1 class="">How to make money from Cryptocurrencies: Beginner's Guide</h1>
                                 <p class=" text-sm font-extralight text-[#4b5563] my-5">Cryptocurrencies have captured the imagination of consumers, investors, institutions, and governments alike. In the span of a few years, this nascent asset class has grown from a bit player to a phenomenon.</p>
@@ -86,6 +86,12 @@
                                     <img class=" w-full h-full absolute" src="https://global-uploads.webflow.com/627a1044a798e6627445c8d1/627a1045a798e617ab45c99d_white-gradient.png" alt="">
                                     <p class=" font-extralight text-sm text-[#6b7280]">While the media has focused on the meteoric rise of Bitcoin and other leading cryptocurrencies, they actually only account for a small fraction of the market capitalization of digital currencies. In this article, we’ll explore</p>
                                 </div>
+                            </div>
+                            <div class=" ml-12 mt-12">
+                                <p class="text-[#9ca3af] font-semibold text-xs mb-12">TITLE</p>
+                                <p class="text-[#9ca3af] font-semibold text-xs mb-12">INTRO</p>
+                                <p class="text-[#9ca3af] font-semibold text-xs mb-12">OUTLINE</p>
+                                <p class="text-[#9ca3af] font-semibold text-xs mb-5">BODY</p>
                             </div>
                         </div>
                     </div>
@@ -128,8 +134,11 @@ onMounted(()=>{
       }
       if( animatePosition > 0){
       contant.value.style.transform = `translateY(${ -(animatePosition / 1.2 )}px)`
-      this.document.getElementById('featurcard').style.transform = `rotateZ( ${animatePosition / 40}deg)`
+      this.document.getElementById('featurcard').style.transform = `rotateZ( ${animatePosition / 40}deg) translate3d(10px, -${animatePosition / 10}px, 10px)`
       } 
+      else{
+        animatePosition = 0
+      }
 
     
 
