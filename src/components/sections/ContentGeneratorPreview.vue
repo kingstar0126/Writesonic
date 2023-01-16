@@ -112,8 +112,8 @@ const contant = ref()
 onMounted(()=>{
     window.addEventListener('scroll',update)
     function update(){
-      var startAnimation = 6800
-      var opacityPosition = 6300
+      var startAnimation = 9200
+      var opacityPosition = 8700
       var animateOpacity = (y.value - opacityPosition)
       var animatePosition = (y.value - startAnimation)
       var opacityTitle = 1
@@ -124,7 +124,7 @@ onMounted(()=>{
       }
       if(animateOpacity > 0 ){
         if(animateOpacity > 240){
-            opacityOutiline +=(animateOpacity / 600)
+            opacityOutiline +=(animateOpacity / 1000)
         }
         opacityTitle -= (animateOpacity / 120)
         opacityIntro += (animateOpacity / 200)
